@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.mainLogin {
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginEsquerda {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginEsquerda>h1 {
+    font-size: 3vw;
+    color: #77ffc0;
+}
+
+.logoLogin {
+    width: 30vw;
+}
+
+.loginDireita {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalLogin {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.modalLogin>h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+.campoLoginSenhaUsuario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.campoLoginSenhaUsuario>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.campoLoginSenhaUsuario>label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.campoLoginSenhaUsuario>input::placeholder {
+    color: #f0ffff94;
+}
+
+.btn {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0px 10px 50px #00ff8052;
+}
+
+.btn-cadastro {
+    width: 55%;
+    padding: 16px 0px;
+    margin: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2b134b;
+    background-color: #00ff88;
+    cursor: pointer;
+}
+
+.btn-cadastro:hover {
+    box-shadow: 0px 10px 50px #00ff8052;
+}
+
+@media only screen and (max-width: 950px) {
+    .modalLogin {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mainLogin {
+        flex-direction: column;
+        margin: 0px;
+        height: auto;
+    }
+
+    .loginEsquerda>h1 {
+        display: none;
+    }
+
+    .loginEsquerda {
+        width: 100%;
+        height: auto;
+        margin: 5vw;
+    }
+
+    .loginDireita {
+        width: 100%;
+        height: auto;
+    }
+
+    .logoLogin {
+        width: 50vw;
+    }
+
+    .modalLogin {
+        width: 90%;
+    }
+}
+
+.saudacaoUsuario {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
