@@ -1,44 +1,33 @@
-var cadastroMembros = [
-    {
-        email: 'leotrierveiler65@gmail.com',
-        senha: '123456'
-    }
-];
+var dadosMembros = `[{
+    "nome": "Leonardo",
+    "email": "leotrierveiler65@gmail.com",
+    "senha": "123456"
+    },{
+    "nome": "Adriano",
+    "email": "adriano@teste.com",
+    "senha": "teste123"
+    },{
+    "nome": "Edson",
+    "email": "edson@teste.com",
+    "senha": "123teste"
+    },{
+    "nome": "Robinson",
+    "email": "robinson@teste.com",
+    "senha": "teste1234"
+    },{
+    "nome": "João",
+    "email": "joao@teste.com",
+    "senha": "1234teste"
+    }]`;
 
-document.getElementById('cadastrarLogin').addEventListener('click', cadastrarUsuario);
 document.getElementById('realizarLogin').addEventListener('click', loginUsuario);
 
-var verificaEmail;
-var verificaSenha;
-
-function cadastrarUsuario() {
-
-    var membrosDados = {
-        email: document.getElementById('loginUsuario').value,
-        senha: document.getElementById('senhaUsuario').value
-    }
-
-    verificaEmail = document.getElementById('loginUsuario').value;
-
-    for (let index = 0; index < cadastroMembros.length; index++) {
-        if (cadastroMembros[index].email == verificaEmail) {
-            alert('Cadastro já realizado!');
-            break;
-        } else {
-            cadastroMembros.push(membrosDados);
-            console.log(cadastroMembros);
-            break;
-        }
-    }
-}
+var cadastroMembros = JSON.parse(dadosMembros);
+console.log(cadastroMembros);
 
 function loginUsuario() {
-    var cadastroMembrosJson = JSON.stringify(cadastroMembros);
-    console.log(cadastroMembrosJson);
-    cadastroMembros = JSON.parse(cadastroMembrosJson);
-
-    verificaEmail = document.getElementById('loginUsuario').value;
-    verificaSenha = document.getElementById('senhaUsuario').value;
+    var verificaEmail = document.getElementById('loginUsuario').value;
+    var verificaSenha = document.getElementById('senhaUsuario').value;
 
     for (let index = 0; index < cadastroMembros.length; index++) {
         if (cadastroMembros[index].email == verificaEmail) {
