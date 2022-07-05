@@ -7,7 +7,6 @@ var dadosMembros = `[{
 document.getElementById('realizarLogin').addEventListener('click', loginUsuario);
 
 var cadastroMembros = JSON.parse(dadosMembros);
-console.log(cadastroMembros);
 
 function loginUsuario() {
     var verificaEmail = document.getElementById('loginUsuario').value;
