@@ -2,22 +2,6 @@ var dadosMembros = `[{
     "nome": "Leonardo",
     "email": "leonardo@teste.com",
     "senha": "123456"
-    },{
-    "nome": "Adriano",
-    "email": "adriano@teste.com",
-    "senha": "teste123"
-    },{
-    "nome": "Edson",
-    "email": "edson@teste.com",
-    "senha": "123teste"
-    },{
-    "nome": "Robinson",
-    "email": "robinson@teste.com",
-    "senha": "teste1234"
-    },{
-    "nome": "João",
-    "email": "joao@teste.com",
-    "senha": "1234teste"
     }]`;
 
 document.getElementById('realizarLogin').addEventListener('click', loginUsuario);
